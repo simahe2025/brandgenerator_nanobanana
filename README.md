@@ -1,7 +1,5 @@
 # 产品广告生成器 / Product Ad Generator
 
-![Uploading graduate1.png…]()
-![Uploading graduate2.png…]()
 
 一个基于 nano-banana Gemini 2.5 Flash API 的智能产品广告生成工具，能够将您的产品图片无缝集成到各种专业广告场景中。
 
@@ -213,4 +211,5 @@ gemini_image_generator/
 
 
 **注意**：本工具仅供学习和研究使用，生成的广告内容请遵守相关法律法规和平台规定。
+
 

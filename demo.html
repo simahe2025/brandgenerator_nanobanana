@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品广告生成器 - 演示页面</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-gray-900">产品广告生成器</h1>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                        开始使用
+                    </a>
+                    <a href="https://github.com" class="text-gray-600 hover:text-gray-900 px-4 py-2">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold mb-6">
+                让 AI 为您的产品<br>
+                <span class="text-yellow-300">创造完美广告</span>
+            </h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                基于 Google Gemini 2.0 Flash 的智能广告生成器，将您的产品无缝融入各种专业广告场景中，
+                从时代广场的巨型广告牌到社交媒体的精美帖子。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                    🚀 立即体验
+                </a>
+                <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-colors">
+                    📖 了解更多
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特性 -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">强大功能特性</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    我们的 AI 广告生成器提供专业级的功能，让您轻松创建令人印象深刻的产品广告
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 功能卡片 -->
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-semibold mb-3">AI 驱动生成</h3>
+                    <p class="text-gray-600">基于 Google Gemini 2.0 Flash 的最新多模态 AI 技术，确保生成高质量的专业广告图片。</p>
+                </div>
+
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-semibold mb-3">10种广告场景</h3>
+                    <p class="text-gray-600">从城市广告牌到社交媒体，提供多样化的广告场景选择，满足不同营销需求。</p>
+                </div>
+
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-semibold mb-3">响应式设计</h3>
+                    <p class="text-gray-600">完美适配桌面端和移动端，支持深色模式，提供优秀的用户体验。</p>
+                </div>
+
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-semibold mb-3">快速生成</h3>
+                    <p class="text-gray-600">智能优化的生成流程，通常在 10-30 秒内完成高质量广告图片的创建。</p>
+                </div>
+
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-semibold mb-3">安全可靠</h3>
+                    <p class="text-gray-600">API 密钥本地存储，图片处理完全在客户端进行，保护您的数据隐私。</p>
+                </div>
+
+                <div class="card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🖼️</div>
+                    <h3 class="text-xl font-semibold mb-3">多格式支持</h3>
+                    <p class="text-gray-600">支持 PNG、JPG、WEBP 等主流图片格式，最大支持 4MB 的高清图片。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 广告场景展示 -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">丰富的广告场景</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    选择最适合您产品的广告场景，让 AI 为您创造专业的营销素材
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover">
+                    <div class="text-3xl mb-3">🌪️</div>
+                    <h3 class="font-semibold mb-2">城市广告牌</h3>
+                    <p class="text-sm text-gray-600">时代广场巨型广告牌</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover">
+                    <div class="text-3xl mb-3">📰</div>
+                    <h3 class="font-semibold mb-2">杂志广告</h3>
+                    <p class="text-sm text-gray-600">时尚杂志全页广告</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover">
+                    <div class="text-3xl mb-3">🚌</div>
+                    <h3 class="font-semibold mb-2">公交广告</h3>
+                    <p class="text-sm text-gray-600">伦敦双层巴士广告</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover">
+                    <div class="text-3xl mb-3">📺</div>
+                    <h3 class="font-semibold mb-2">机场数字屏</h3>
+                    <p class="text-sm text-gray-600">未来感机场广告</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover">
+                    <div class="text-3xl mb-3">☕</div>
+                    <h3 class="font-semibold mb-2">咖啡店招牌</h3>
+                    <p class="text-sm text-gray-600">温馨街边咖啡店</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="index.html" class="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                    查看全部 10 种场景 →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使用步骤 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">三步生成专业广告</h2>
+                <p class="text-xl text-gray-600">简单易用的操作流程，让您快速获得满意的广告效果</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-purple-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">上传产品图片</h3>
+                    <p class="text-gray-600">支持 PNG、JPG、WEBP 格式，建议使用高清图片以获得最佳效果。</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-purple-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">选择广告场景</h3>
+                    <p class="text-gray-600">从 10 种专业广告场景中选择最适合您产品定位的场景类型。</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-purple-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">生成并下载</h3>
+                    <p class="text-gray-600">点击生成按钮，等待 AI 创造魔法，然后下载您的专业广告图片。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术优势 -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">基于最新 AI 技术</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        我们使用 Google Gemini 2.0 Flash 多模态 AI 模型，这是目前最先进的图像生成技术之一。
+                        它能够理解您的产品特征，并将其自然地融入到各种广告场景中。
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-lg mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1">智能场景理解</h3>
+                                <p class="text-gray-600">AI 能够理解不同广告场景的特点和要求</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-lg mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1">自然产品融合</h3>
+                                <p class="text-gray-600">产品与场景的无缝融合，看起来自然真实</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-lg mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1">专业级质量</h3>
+                                <p class="text-gray-600">生成的广告图片达到商业使用标准</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">立即开始创作</h3>
+                        <p class="text-gray-600">准备好为您的产品创造令人印象深刻的广告了吗？</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-medium">✅ 免费使用</span>
+                            <span class="text-green-600 font-semibold">$0</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-medium">⚡ 快速生成</span>
+                            <span class="text-blue-600 font-semibold">10-30秒</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-medium">🎨 多种场景</span>
+                            <span class="text-purple-600 font-semibold">10种选择</span>
+                        </div>
+                    </div>
+
+                    <a href="index.html" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 rounded-lg font-semibold text-center block mt-6 hover:from-purple-700 hover:to-pink-700 transition-colors">
+                        🚀 开始创作广告
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">产品广告生成器</h3>
+                    <p class="text-gray-400">基于 AI 的智能广告创作工具，让每个人都能创造专业级的产品广告。</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">开始使用</a></li>
+                        <li><a href="#features" class="hover:text-white">功能特性</a></li>
+                        <li><a href="README.md" class="hover:text-white">使用文档</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">技术支持</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://aistudio.google.com/app/apikey" class="hover:text-white">获取 API 密钥</a></li>
+                        <li><a href="#" class="hover:text-white">常见问题</a></li>
+                        <li><a href="#" class="hover:text-white">联系我们</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">关于项目</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>广东第二师范学院</li>
+                        <li>AI 教育技术研究</li>
+                        <li>开源项目</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 产品广告生成器. 基于 MIT 许可证开源.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

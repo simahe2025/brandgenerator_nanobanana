@@ -1,0 +1,42 @@
+{
+  "name": "product-ad-generator",
+  "version": "1.0.0",
+  "description": "基于 Gemini 2.0 Flash API 的智能产品广告生成工具",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build process needed for static HTML'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "ai",
+    "gemini",
+    "advertisement",
+    "image-generation",
+    "product-marketing",
+    "react",
+    "tailwindcss"
+  ],
+  "author": "广东第二师范学院 (Guangdong University of Education)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/product-ad-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/product-ad-generator/issues"
+  },
+  "homepage": "https://github.com/your-username/product-ad-generator#readme",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
